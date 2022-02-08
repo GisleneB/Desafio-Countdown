@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('./minutos-do-foguete.png');
+    font-family: 'Montserrat', 'sans-serif';
+    user-select: none;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.title{
+    font-size: calc(10px + 3vw);
+}
+.title p{
+    font-size: calc(10px + 1vw);
+}
+.countdown{
+    display: flex;
+    width: 60vw;
+    justify-content: space-between;
+}
+.countdown h1{
+    font-size: calc(10px + 8vw);   
+}
+.demo p{
+    font-size: calc(60px + 6vw);
+}
+.button{
+    padding: 10px;
+    background: rgb(142, 112, 170);
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform: translate(30%); 
+    cursor: pointer;  
+}
+.button:hover{
+    background: rgb(175, 168, 182);
+    color: black;
+}
+.modal{
+    width: 100px;
+    height: 100px;
+    background: rgb(142, 112, 170);
+    top: 10%;
+    left: 10%;
+    transform: translate(30%); 
+    display: none; 
+    animation: animate;
+    animation-duration: 10ms;
+    
+}
+@keyframes animate{
+    from {opacity: 1;}
+    from {opacity: 0;}
+}
+.h1{
+    width: 700px;
+    height: 700px;
+    background-color: black;
+    text-align: right;
+}
+.enviar{
+    width: 700px;
+    height: 700px;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+}    
